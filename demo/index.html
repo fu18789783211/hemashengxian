@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .wrap {
+      width: 100%;
+      /* padding: 15px 10px; */
+      overflow: hidden;
+      background: #f4f4f4;
+    }
+
+    .wrap .header {
+      padding: 15px 10px;
+      background: #ffffff;
+      overflow: hidden;
+    }
+
+    .wrap .top {
+      position: relative;
+      padding-left: 34px;
+      height: 24px;
+      background-image: url(../images/ia_900000006.png);
+      background-repeat: no-repeat;
+      background-size: 24px;
+      background-position: left center;
+      font-size: 18px;
+      font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+      font-weight: Normal;
+      text-align: left;
+      color: #000000;
+      line-height: 24px;
+    }
+    .wrap .qrcode {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 24px;
+      width: 24px;
+      background-image: url(../images/ia_900000007.png);
+      background-repeat: no-repeat;
+      background-size: 24px;
+      background-position: right center;
+    }
+    .wrap .scan {
+      position: absolute;
+      right: 37px;
+      top: 0;
+      height: 24px;
+      width: 24px;
+      background-image: url(../images/ia_900000008.png);
+      background-repeat: no-repeat;
+      background-size: 24px;
+      background-position: right center;
+    }
+    .wrap .search {
+      padding-top: 15px;
+    }
+    .wrap .search input {
+      padding-left: 10px;
+      width: 351px;
+      height: 32px;
+      background: #ffffff;
+      border: 1px solid #08affe;
+      border-radius: 17px;
+    }
+    .wrap .icons {
+      padding-top: 16px;
+      padding-bottom: 4px;
+      display: flex;
+      font-size: 0;
+      flex-wrap: wrap;
+    }
+
+    .wrap .icons .item {
+      margin-left: 13px;
+      flex: 0 0 56px;
+    }
+    .wrap .icons .item img {
+      width: 56px;
+      height: 56px;
+      border-radius: 28px;
+    }
+    .wrap .icons .item div {
+      margin-top: 7px;
+      margin-bottom: 11px;
+      background: rgba(0,0,0,0.00);
+      font-size: 14px;
+      font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+      font-weight: Normal;
+      text-align: left;
+      color: #000000;
+      line-height: 14px;
+    }
+    .reckon {
+      margin: 0 10px;
+      padding: 10px 8px;
+      background: #fff;
+    }
+    .reckon .reckon-title {
+      height: 24px;
+      font-size: 16px;
+      font-family: AppleSystemUIFont, AppleSystemUIFont-Bold, sans-serif;
+      font-weight: Bold;
+      text-align: left;
+      color: #000000;
+      line-height: 24px;
+    }
+    .reckon .reckon-title .img {
+      margin-right: 10px;
+      float: left;
+      width: 24px;
+      height: 24px;
+      background: #ff5030;
+      background-image: url(../images/EF5A4E51E7DF6DDB6FFFCF4AD7C829AD.png);
+      background-repeat: no-repeat;
+      background-size: 12px;
+      background-position: center;
+      border-radius: 12px;
+    }
+    .reckon .reckon-title .reckon-title-more {
+      float: right;
+      font-size: 14px;
+      font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+      font-weight: Normal;
+      text-align: right;
+      color: #999999;
+      line-height: 24px;
+    }
+    .reckon .reckon-body {
+      margin-top: 16px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .reckon .reckon-body .item {
+      flex: 0 0 111px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .reckon .reckon-body .item img {
+      width: 90px;
+      height: 90px;
+    }
+    .item-content-text {
+      height: 17px;
+      margin-top: 10px;
+      font-size: 14px;
+      font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+      font-weight: Normal;
+      text-align: left;
+      color: #000000;
+      line-height: 17px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .item-content-price {
+      margin-top: 2px;
+      height: 24px;
+      font-size: 12px;
+      font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+      font-weight: Normal;
+      text-align: left;
+      color: #cccccc;
+      line-height: 24px;
+    }
+    .item-content-price span {
+      padding-right: 2px;
+      font-size: 16px;
+      font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+      font-weight: Normal;
+      text-align: left;
+      color: #ff5030;
+      line-height: 24px;
+    } 
+    .item-content-price .icp-img {
+      margin-right: 8px;
+      float: right;
+      width: 24px;
+      height: 24px;
+      background: #ff5030;
+      background-image: url(../images/ia_900000040.png);
+      background-repeat: no-repeat;
+      background-size: 12px;
+      background-position: center;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="top">
+        电子科技大学
+        <span class="scan"></span>
+        <span class="qrcode"></span>
+      </div>
+      <div class="search">
+        <input placeholder="西瓜最甜"/>
+      </div>
+    </div>
+    <div class="icons">
+      <div class="item">
+        <img src="../images/ia_900000009.jpeg">
+        <div>时令水果</div>
+      </div>
+      <div class="item">
+        <img src="../images/ia_900000010.jpeg">
+        <div>时令水果</div>
+      </div><div class="item">
+        <img src="../images/ia_900000011.jpeg">
+        <div>时令水果</div>
+      </div><div class="item">
+        <img src="../images/ia_900000012.jpeg">
+        <div>时令水果</div>
+      </div><div class="item">
+        <img src="../images/ia_900000013.jpeg">
+        <div>时令水果</div>
+      </div><div class="item">
+        <img src="../images/ia_900000014.jpeg">
+        <div>时令水果</div>
+      </div><div class="item">
+        <img src="../images/ia_900000016.jpeg">
+        <div>时令水果</div>
+      </div><div class="item">
+        <img src="../images/ia_900000016.jpeg">
+        <div>时令水果</div>
+      </div><div class="item">
+        <img src="../images/ia_900000017.jpeg">
+        <div>时令水果</div>
+      </div><div class="item">
+        <img src="../images/ia_900000018.jpeg">
+        <div>时令水果</div>
+      </div>
+    </div>
+    <div class="reckon">
+      <div class="reckon-title">
+        <div class="img"></div>
+        超盒算
+        <div class="reckon-title-more">更多 &gt;</div>
+      </div>
+      <div class="reckon-body">
+        <div class="item">
+          <img src="../images/ia_900000020.jpeg"/>
+          <div class="item-content">
+            <div class="item-content-text">南汇8424西瓜宽松的款式可是酒店更合适</div>
+            <div class="item-content-price">
+              <span>￥29.9</span>个
+              <div class="icp-img"></div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="../images/ia_900000020.jpeg" />
+          <div class="item-content">
+            <div class="item-content-text">南汇8424西瓜宽松的款式</div>
+            <div class="item-content-price">
+              <span>￥29.9</span>个
+              <div class="icp-img"></div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="../images/ia_900000022.jpeg" />
+          <div class="item-content">
+            <div class="item-content-text">南汇8424西瓜宽松的款式</div>
+            <div class="item-content-price">
+              <span>￥29.9</span>个
+              <div class="icp-img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
