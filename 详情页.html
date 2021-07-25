@@ -1,48 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>详情页</title>
     <style>
-        .top-img{
+        body {
+            margin: 0;
+        }
+
+        .top-img {
             margin-top: 25px;
             width: 375px;
             height: 369px;
             background-image: url(../hemashengxian/img详情页/ia_300000002.png);
             background-repeat: no-repeat;
         }
-        .top-img .left{
+
+        .top-img .left {
             margin-left: 15px;
             margin-top: 10px;
             width: 32px;
             height: 32px;
             opacity: 1;
-            background: rgba(0,0,0,0.70);
+            background: rgba(0, 0, 0, 0.70);
             border-radius: 16px;
-            background-image: url(../hemashengxian/img详情页/ia_300000013.png);
-            background-repeat: no-repeat;
-            background-size: 16px;
         }
-        .top-img .right{
-            margin-right: 16px;
+
+        .top-img .left .quit {
+            background-image: url(../hemashengxian/img详情页/ia_300000013.png);
+            width: 16px;
+            height: 16px;
+            opacity: 1;
+        }
+
+        .top-img .right {
+            margin-right: 15px;
             margin-top: 10px;
             width: 32px;
             height: 32px;
             opacity: 1;
-            background: rgba(0,0,0,0.70);
+            background: rgba(0, 0, 0, 0.70);
             border-radius: 16px;
+        }
+
+        .top-img .right .cart {
             background-image: url(../hemashengxian/img详情页/ia_300000014.png);
-            background-repeat: no-repeat;
-            background-size: 16px;
+            width: 16px;
+            height: 16px;
+            opacity: 1;
         }
     </style>
 </head>
+
 <body>
     <div class="top-img">
-        <div class="left"></div>
-        <div class="right"></div>
+        <div class="left">
+            <div class="quit"></div>
+        </div>
+        <div class="right">
+            <div class="Cart"></div>
+        </div>
     </div>
 </body>
+
 </html>
