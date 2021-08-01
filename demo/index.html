@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>首页</title>
   <style>
     * {
       padding: 0;
       margin: 0;
       box-sizing: border-box;
     }
+
     body {
       padding: 0;
       margin: 0;
     }
+
     .wrap {
       width: 100%;
       /* padding: 15px 10px; */
@@ -43,6 +46,7 @@
       color: #000000;
       line-height: 24px;
     }
+
     .wrap .qrcode {
       position: absolute;
       right: 0;
@@ -54,6 +58,7 @@
       background-size: 24px;
       background-position: right center;
     }
+
     .wrap .scan {
       position: absolute;
       right: 37px;
@@ -65,9 +70,11 @@
       background-size: 24px;
       background-position: right center;
     }
+
     .wrap .search {
       padding-top: 15px;
     }
+
     .wrap .search input {
       padding-left: 10px;
       width: 351px;
@@ -76,6 +83,7 @@
       border: 1px solid #08affe;
       border-radius: 17px;
     }
+
     .wrap .icons {
       padding-top: 16px;
       padding-bottom: 4px;
@@ -88,15 +96,17 @@
       margin-left: 13px;
       flex: 0 0 56px;
     }
+
     .wrap .icons .item img {
       width: 56px;
       height: 56px;
       border-radius: 28px;
     }
+
     .wrap .icons .item div {
       margin-top: 7px;
       margin-bottom: 11px;
-      background: rgba(0,0,0,0.00);
+      background: rgba(0, 0, 0, 0.00);
       font-size: 14px;
       font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
       font-weight: Normal;
@@ -104,11 +114,13 @@
       color: #000000;
       line-height: 14px;
     }
+
     .reckon {
       margin: 0 10px;
       padding: 10px 8px;
       background: #fff;
     }
+
     .reckon .reckon-title {
       height: 24px;
       font-size: 16px;
@@ -118,6 +130,7 @@
       color: #000000;
       line-height: 24px;
     }
+
     .reckon .reckon-title .img {
       margin-right: 10px;
       float: left;
@@ -130,6 +143,7 @@
       background-position: center;
       border-radius: 12px;
     }
+
     .reckon .reckon-title .reckon-title-more {
       float: right;
       font-size: 14px;
@@ -139,20 +153,24 @@
       color: #999999;
       line-height: 24px;
     }
+
     .reckon .reckon-body {
       margin-top: 16px;
       display: flex;
       justify-content: space-between;
     }
+
     .reckon .reckon-body .item {
       flex: 0 0 111px;
       text-align: center;
       overflow: hidden;
     }
+
     .reckon .reckon-body .item img {
       width: 90px;
       height: 90px;
     }
+
     .item-content-text {
       height: 17px;
       margin-top: 10px;
@@ -166,6 +184,7 @@
       white-space: nowrap;
       text-overflow: ellipsis;
     }
+
     .item-content-price {
       margin-top: 2px;
       height: 24px;
@@ -176,6 +195,7 @@
       color: #cccccc;
       line-height: 24px;
     }
+
     .item-content-price span {
       padding-right: 2px;
       font-size: 16px;
@@ -184,21 +204,273 @@
       text-align: left;
       color: #ff5030;
       line-height: 24px;
-    } 
+    }
+
     .item-content-price .icp-img {
       margin-right: 8px;
       float: right;
       width: 24px;
       height: 24px;
-      background: #ff5030;
+      background: #08affe;
       background-image: url(../images/ia_900000040.png);
       background-repeat: no-repeat;
       background-size: 12px;
       background-position: center;
       border-radius: 12px;
     }
+
+    .middle {
+      width: 351px;
+      height: 151px;
+      background: #ffffff;
+      margin-top: 15px;
+      margin-left: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .middle .middle-item {
+      flex-direction: row;
+      margin-left: 16px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .middle .middle-item .title {
+      margin-top: 14px;
+      width: 69px;
+      height: 18px;
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.00);
+      font-size: 16px;
+      font-family: AppleSystemUIFont, AppleSystemUIFont-Bold, sans-serif;
+      font-weight: Bold;
+      text-align: left;
+      color: #000000;
+      line-height: 16px;
+    }
+
+    .middle .middle-item .text {
+      margin-top: 8px;
+      width: 133px;
+      height: 16px;
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.00);
+      font-size: 14px;
+      font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+      font-weight: Normal;
+      text-align: left;
+      color: #999999;
+      line-height: 14px;
+    }
+
+    .middle .middle-item img {
+      margin-top: 13px;
+      width: 67px;
+      height: 67px;
+    }
+
+    .middle .line {
+      width: 1px;
+      height: 151px;
+      opacity: 1;
+      border: 1px solid #e4e4e4;
+    }
+
+    .sort-title {
+      display: flex;
+    }
+
+    .sort-title .item {
+      margin-top: 19px;
+      margin-left: 40px;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 41px;
+      height: 20px;
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.00);
+      font-size: 18px;
+      font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+      font-weight: Normal;
+      text-align: left;
+      color: #000000;
+      line-height: 18px;
+    }
+
+    .sort-text {
+      display: flex;
+      margin: 8px 0;
+      padding: 0 10px;
+      justify-content: space-between;
+    }
+
+    .sort-text .item {
+      width: 61px;
+      height: 16px;
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.00);
+      font-size: 14px;
+      font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+      font-weight: Normal;
+      text-align: left;
+      color: #cccccc;
+      line-height: 14px;
+    }
+
+    .sort-text .item1 {
+      width: 82px;
+      height: 24px;
+      opacity: 1;
+      background: #08affe;
+      font-size: 14px;
+      font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+      font-weight: Normal;
+      text-align: center;
+      color: #ffffff;
+      line-height: 24px;
+      border-radius: 12px;
+    }
+
+    .detail {
+      width: 351px;
+      height: 518px;
+      margin: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+
+    .detail .item {
+      width: 168px;
+      height: 252px;
+      background: #ffffff;
+    }
+
+    .detail .item img {
+      width: 131px;
+      height: 131px;
+      margin: 18px;
+      margin-bottom: 0;
+    }
+
+    .detail .item .detail-resolve {
+      width: 150px;
+      height: 17px;
+      margin-top: 16px;
+      margin-left: 11px;
+      background: rgba(0, 0, 0, 0.00);
+      font-size: 14px;
+      font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+      font-weight: Normal;
+      text-align: left;
+      color: #000000;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .detail .item span {
+      width: 80px;
+      height: 15px;
+      margin-top: 6px;
+      margin-left: 11px;
+      background: rgba(0, 0, 0, 0.00);
+      font-size: 12px;
+      font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+      font-weight: Normal;
+      text-align: left;
+      color: #999999;
+      line-height: 12px;
+    }
+
+    .detail .item .detail-price {
+      margin-top: 11px;
+      font-size: 12px;
+      font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+      font-weight: Normal;
+      color: #999999;
+
+    }
+
+    .detail .item .detail-price span {
+      width: 61px;
+      height: 21px;
+      margin-left: 11px;
+      background: rgba(0, 0, 0, 0.00);
+      font-size: 18px;
+      font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+      font-weight: Normal;
+      text-align: left;
+      color: #ff5030;
+      line-height: 18px;
+      margin-top: 11px;
+    }
+
+    .detail .item .detail-price .price-img {
+      width: 24px;
+      height: 24px;
+      background: #08affe;
+      border-radius: 12px;
+      float: right;
+      background-image: url(../images/ia_900000040.png);
+      background-size: 12px;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-right: 11px;
+    }
+
+    .bottom {
+      width: 375px;
+      height: 47px;
+      margin-top: 12px;
+      background: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      position:fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .bottom .item {
+      margin-left: 20px;
+      margin-top: 6px;
+    }
+
+    .bottom .item img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .bottom .item .text {
+      margin-left: -3px;
+      width: 40px;
+      height: 13px;
+      background: rgba(0, 0, 0, 0.00);
+      font-size: 12px;
+      font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+      font-weight: Normal;
+      text-align: left;
+      color: #999999;
+      line-height: 12px;
+    }
+    .bottom .item .text1{
+      width: 29px;
+      height: 14px;
+      opacity: 1;
+      background: rgba(51,153,255,0.00);
+      font-size: 12px;
+      font-family: AppleSystemUIFont, AppleSystemUIFont-Normal,sans-serif;
+      font-weight: Normal;
+      text-align: left;
+      color: #3399ff;
+      line-height: 12px;
+    }
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <div class="header">
@@ -208,7 +480,7 @@
         <span class="qrcode"></span>
       </div>
       <div class="search">
-        <input placeholder="西瓜最甜"/>
+        <input placeholder="西瓜最甜" />
       </div>
     </div>
     <div class="icons">
@@ -219,28 +491,36 @@
       <div class="item">
         <img src="../images/ia_900000010.jpeg">
         <div>时令水果</div>
-      </div><div class="item">
+      </div>
+      <div class="item">
         <img src="../images/ia_900000011.jpeg">
         <div>时令水果</div>
-      </div><div class="item">
+      </div>
+      <div class="item">
         <img src="../images/ia_900000012.jpeg">
         <div>时令水果</div>
-      </div><div class="item">
+      </div>
+      <div class="item">
         <img src="../images/ia_900000013.jpeg">
         <div>时令水果</div>
-      </div><div class="item">
+      </div>
+      <div class="item">
         <img src="../images/ia_900000014.jpeg">
         <div>时令水果</div>
-      </div><div class="item">
+      </div>
+      <div class="item">
         <img src="../images/ia_900000016.jpeg">
         <div>时令水果</div>
-      </div><div class="item">
+      </div>
+      <div class="item">
         <img src="../images/ia_900000016.jpeg">
         <div>时令水果</div>
-      </div><div class="item">
+      </div>
+      <div class="item">
         <img src="../images/ia_900000017.jpeg">
         <div>时令水果</div>
-      </div><div class="item">
+      </div>
+      <div class="item">
         <img src="../images/ia_900000018.jpeg">
         <div>时令水果</div>
       </div>
@@ -251,17 +531,21 @@
         超盒算
         <div class="reckon-title-more">更多 &gt;</div>
       </div>
+
       <div class="reckon-body">
         <div class="item">
-          <img src="../images/ia_900000020.jpeg"/>
+          <img src="../images/ia_900000020.jpeg" />
           <div class="item-content">
             <div class="item-content-text">南汇8424西瓜宽松的款式可是酒店更合适</div>
+
             <div class="item-content-price">
               <span>￥29.9</span>个
               <div class="icp-img"></div>
             </div>
+
           </div>
         </div>
+
         <div class="item">
           <img src="../images/ia_900000020.jpeg" />
           <div class="item-content">
@@ -272,6 +556,7 @@
             </div>
           </div>
         </div>
+
         <div class="item">
           <img src="../images/ia_900000022.jpeg" />
           <div class="item-content">
@@ -282,8 +567,100 @@
             </div>
           </div>
         </div>
+
+      </div>
+    </div>
+    <div class="middle">
+
+      <div class="middle-item">
+        <div class="title">好吃点</div>
+        <div class="text">广东白糖罂荔枝试吃</div>
+        <img src="../images/ia_900000026.jpeg">
+        <img src="../images/ia_900000027.jpeg">
+      </div>
+
+      <div class="line"></div>
+
+      <div class="middle-item">
+        <div class="title">产地量贩</div>
+        <div class="text">红心火龙果5元一个</div>
+        <img src="../images/ia_900000028.jpeg">
+        <img src="../images/ia_900000029.jpeg">
+      </div>
+    </div>
+    <div class="sort-title">
+      <div class="item">全部</div>
+      <div class="item">时令</div>
+      <div class="item">进口</div>
+      <div class="item">人气</div>
+    </div>
+    <div class="sort-text">
+      <div class="item item1">猜你喜欢</div>
+      <div class="item">当季优选</div>
+      <div class="item">国际直采</div>
+      <div class="item">大家在买</div>
+    </div>
+    <div class="detail">
+      <div class="item">
+        <img src="../images/ia_900000029.jpeg">
+        <div class="detail-resolve">泰国进口4A山竹3斤龙利鱼yyds</div>
+        <span>商家24H发货</span>
+        <div class="detail-price">
+          <span>￥39.9</span>个
+          <div class="price-img"></div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="../images/ia_900000029.jpeg">
+        <div class="detail-resolve">泰国进口4A山竹3斤龙利鱼yyds</div>
+        <span>商家24H发货</span>
+        <div class="detail-price">
+          <span>￥39.9</span>个
+          <div class="price-img"></div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="../images/ia_900000029.jpeg">
+        <div class="detail-resolve">泰国进口4A山竹3斤龙利鱼yyds</div>
+        <span>商家24H发货</span>
+        <div class="detail-price">
+          <span>￥39.9</span>个
+          <div class="price-img"></div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="../images/ia_900000029.jpeg">
+        <div class="detail-resolve">泰国进口4A山竹3斤龙利鱼yyds</div>
+        <span>商家24H发货</span>
+        <div class="detail-price">
+          <span>￥39.9</span>个
+          <div class="price-img"></div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="item">
+        <img src="../images/ia_900000038.png">
+        <div class="text text1">首页</div>
+      </div>
+      <div class="item">
+        <img src="../images/ia_900000041.png">
+        <div class="text">分类</div>
+      </div>
+      <div class="item">
+        <img src="../images/ia_900000040.png">
+        <div class="text">购物车</div>
+      </div>
+      <div class="item">
+        <img src="../images/ia_900000039.png">
+        <div class="text">我的</div>
       </div>
     </div>
   </div>
+  </div>
+  </div>
+  </div>
+  </div>
 </body>
+
 </html>

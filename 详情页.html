@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,57 +12,606 @@
             margin: 0;
         }
 
-        .top-img {
-            margin-top: 25px;
+        .head-img {
+            background-image: url(../hemashengxian/img详情页/ia_300000002.png);
             width: 375px;
             height: 369px;
-            background-image: url(../hemashengxian/img详情页/ia_300000002.png);
+            margin-right: 10px;
+            margin-top: 25px;
             background-repeat: no-repeat;
+            background-position: -20px;
         }
 
-        .top-img .left {
+        .head-img .left {
+            width: 32px;
+            height: 32px;
+            background: rgba(0, 0, 0, 0.70);
+            border-radius: 16px;
             margin-left: 15px;
             margin-top: 10px;
+            margin-right: 328px;
+        }
+
+        .head-img .left img {
+            width: 16px;
+            height: 16px;
+            margin: 8px;
+        }
+
+        .head-img .right {
             width: 32px;
             height: 32px;
-            opacity: 1;
             background: rgba(0, 0, 0, 0.70);
+            float: right;
+            margin-right: 16px;
+            margin-top: -32px;
             border-radius: 16px;
         }
 
-        .top-img .left .quit {
-            background-image: url(../hemashengxian/img详情页/ia_300000013.png);
+        .head-img .right img {
             width: 16px;
             height: 16px;
-            opacity: 1;
+            margin: 8px;
         }
 
-        .top-img .right {
-            margin-right: 15px;
+        .explanation {
+            display: flex;
+        }
+
+        .explanation .special {
+            width: 81px;
+            height: 22px;
+            background: #3399ff;
+            font-size: 14px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Bold, sans-serif;
+            font-weight: Bold;
+            color: #ffffff;
+            line-height: 20px;
+            margin-left: 11px;
+        }
+
+        .explanation .special .text {
+            width: 61px;
+            height: 15px;
+            font-size: 14px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Bold, sans-serif;
+            font-weight: Bold;
+            text-align: center;
+            color: #ffffff;
+            margin: 1px 10px;
+        }
+
+        .explanation .special span {
+            width: 197px;
+            height: 16px;
+            background: rgba(0, 0, 0, 0.00);
+            font-size: 14px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            text-align: left;
+            color: #999999;
+            line-height: 14px;
+            margin-right: 76px;
+            margin-left: 16px;
+        }
+
+        .title {
+            margin-left: 11px;
+            margin-top: 12px;
+        }
+
+        .title span {
+            width: 303px;
+            height: 21px;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.00);
+            font-size: 18px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            text-align: left;
+            color: #000000;
+            line-height: 18px;
+        }
+
+        .title img {
+            float: right;
+            width: 16px;
+            height: 16px;
+            margin-top: 3px;
+            margin-right: 24px;
+        }
+
+        .settle {
+            margin-left: 11px;
             margin-top: 10px;
-            width: 32px;
-            height: 32px;
+            width: 122px;
+            height: 17px;
             opacity: 1;
-            background: rgba(0, 0, 0, 0.70);
-            border-radius: 16px;
+            background: rgba(0, 0, 0, 0.00);
+            font-size: 14px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            text-align: left;
+            color: #999999;
+            line-height: 14px;
         }
 
-        .top-img .right .cart {
-            background-image: url(../hemashengxian/img详情页/ia_300000014.png);
+        .price .preferential {
+            margin-left: 11px;
+            margin-top: 23px;
+            width: 80px;
+            height: 29px;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.00);
+            font-size: 24px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            text-align: left;
+            color: #ff0000;
+            line-height: 24px;
+        }
+
+        .price .unit {
+            margin-left: 92px;
+            margin-top: -17px;
+            width: 24px;
+            height: 17px;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.00);
+            font-size: 14px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            text-align: left;
+            color: #999999;
+            line-height: 14px;
+        }
+
+        .price .value {
+            text-decoration: line-through;
+            margin-left: 121px;
+            margin-top: -17px;
+            width: 37px;
+            height: 17px;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.00);
+            font-size: 14px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            text-align: left;
+            color: #999999;
+            line-height: 14px;
+        }
+
+        .fare {
+            margin-left: 15px;
+            margin-top: 20px;
+            width: 350px;
+            height: 56px;
+            background: #f2f2f2;
+        }
+
+        .fare img {
+            margin-left: 12px;
+            margin-top: 21px;
+            width: 16px;
+            height: 16px;
+        }
+
+        .fare span {
+            width: 263px;
+            height: 17px;
+            margin-top: 20px;
+            background: rgba(0, 0, 0, 0.00);
+            font-size: 14px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            text-align: left;
+            color: #000000;
+        }
+
+        .time img {
+            margin-left: 27px;
+            margin-top: 15px;
             width: 16px;
             height: 16px;
             opacity: 1;
+        }
+
+        .time .goods {
+            margin-left: 53px;
+            margin-top: -21px;
+            width: 158px;
+            height: 17px;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.00);
+            font-size: 14px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            text-align: start;
+            color: #999999;
+        }
+
+        .selected {
+            margin-left: 15px;
+            margin-top: 16px;
+            width: 350px;
+            height: 56px;
+            opacity: 1;
+            background: #f2f2f2;
+        }
+
+        .selected span {
+            position: absolute;
+            margin-left: 14px;
+            margin-top: 19px;
+            width: 91px;
+            height: 17px;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.00);
+            font-size: 14px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            text-align: left;
+            color: #000000;
+            line-height: 14px;
+        }
+
+        .selected img {
+            float: right;
+            margin-top: 19px;
+            margin-right: 14px;
+            width: 16px;
+            height: 16px;
+            opacity: 1;
+        }
+
+        .evaluate {
+            margin: 10px;
+            margin-left: 15px;
+            width: 350px;
+            height: 137px;
+            opacity: 1;
+            background: #f2f2f2;
+        }
+
+        .evaluate .left {
+            position: absolute;
+            margin-left: 15px;
+            margin-top: 16px;
+            width: 86px;
+            height: 17px;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.00);
+            font-size: 14px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            text-align: left;
+            color: #000000;
+            line-height: 14px;
+        }
+
+        .evaluate .examine {
+            position: relative;
+            float: right;
+            margin-top: 18px;
+            margin-right: 36px;
+            width: 90px;
+            height: 16px;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.00);
+            font-size: 14px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            text-align: left;
+            color: #999999;
+            line-height: 14px;
+        }
+
+        .evaluate .examine img {
+            position: absolute;
+            float: right;
+            /* absolute 会相对于relative来定位*/
+            margin-left: 6px;
+            width: 16px;
+            height: 16px;
+            opacity: 1;
+        }
+
+        .client img {
+            border-radius: 18px;
+            margin-left: 12px;
+            margin-top: 56px;
+            width: 34px;
+            height: 34px;
+        }
+
+        .appraise .client-assess {
+            margin-left: 56px;
+            margin-top: -36px;
+            width: 86px;
+            height: 17px;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.00);
+            font-size: 14px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            text-align: left;
+            color: #000000;
+            line-height: 14px;
+        }
+
+        .appraise .assess-text {
+            margin-left: 56px;
+            margin-top: 14px;
+            width: 218px;
+            height: 16px;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.00);
+            font-size: 14px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            text-align: left;
+            color: #000000;
+            line-height: 14px;
+        }
+
+        .appraise .assess-time {
+            float: right;
+            margin-right: 10px;
+            margin-top: -50px;
+            width: 78px;
+            height: 17px;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.00);
+            font-size: 14px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            text-align: left;
+            color: #999999;
+            line-height: 14px;
+        }
+
+        .recommend {
+            position: relative;
+            width: 350px;
+            height: 326px;
+            background: #f2f2f2;
+            margin: 10px;   
+            margin-left: 15px;
+            border-radius: 10px;
+        }
+
+        .recommend .text {
+            position: absolute;
+            margin-left: 10px;
+            margin-top: 18px;
+            width: 61px;
+            height: 16px;
+            background: rgba(0, 0, 0, 0.00);
+            font-size: 14px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            text-align: left;
+            color: #000000;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .recommend .menu .item {
+            width: 157px;
+            height: 264px;
+            background: #ffffff;
+            margin-top: 49px;
+            border-radius: 10px;
+        }
+
+        .item img {
+            width: 157px;
+            height: 150px;
+            border-radius: 10px;
+        }
+
+        .item .bottom-title {
+            width: 90px;
+            height: 16px;
+            background: rgba(0, 0, 0, 0.00);
+            font-size: 14px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            text-align: left;
+            color: #000000;
+            margin-left:10px;
+            margin-top: 9px;
+        }
+
+        .item .content {
+            width: 137px;
+            height: 15px;
+            background: rgba(0, 0, 0, 0.00);
+            font-size: 12px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            text-align: left;
+            overflow: hidden;
+            white-space:nowrap;
+            color: #999999;
+            margin-left:10px;
+            margin-top: 9px;
+        }
+
+        .item .other {
+            width: 78px;
+            height: 17px;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.00);
+            font-size: 14px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            text-align: left;
+            color: #000000;
+            margin-left:10px;
+            margin-top: 9px;
+        }
+
+        .item .Click-buy span {
+            width: 64px;
+            height: 15px;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.00);
+            font-size: 12px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            text-align: left;
+            color: #cccccc;
+            margin-left:10px;
+            margin-top: 283px;
+        }
+        .item .Click-buy .buy{
+            width: 67px;
+            height: 24px;
+            opacity: 1;
+            background: #3399ff;
+            font-size: 12px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal,sans-serif;
+            font-weight: Normal;
+            color: #f2f2f2;
+            border-radius: 12px;
+            margin-left: 80px;
+            margin-top: -15px;
+        }
+        .item .buy span {
+            width: 53px;
+            height: 13px;
+            opacity: 1;
+            font-size: 12px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal, sans-serif;
+            font-weight: Normal;
+            color: #f2f2f2;
+        }
+        .add{
+            width: 375px;
+            height: 45px;
+            opacity: 1;
+            background: #3399ff;
+            font-size: 14px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal,sans-serif;
+            font-weight: Normal;
+            text-align: center;
+            color: #ffffff;
+            margin-top: 19px;
+            position: fixed;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+        .add span{
+            width: 75px;
+            height: 15px;
+            opacity: 1;
+            font-size: 14px;
+            font-family: AppleSystemUIFont, AppleSystemUIFont-Normal,sans-serif;
+            font-weight: Normal;
+            text-align: center;
+            color: #ffffff;
+            position:fixed;
+            margin-left: -35px;
+            margin-top: 16px;
         }
     </style>
 </head>
 
 <body>
-    <div class="top-img">
-        <div class="left">
-            <div class="quit"></div>
+    <div class="entirety">
+        <div class="head-img">
+            <div class="left">
+                <img src="../hemashengxian/img详情页/ia_300000013.png">
+            </div>
+            <div class="right">
+                <img src="../hemashengxian/img详情页/ia_300000014.png">
+            </div>
         </div>
-        <div class="right">
-            <div class="Cart"></div>
+        <div class="explanation">
+            <div class="special">
+                <div class="text">产地量贩</div>
+            </div>
+            <span>盒马量贩·基地优选·售后无忧</span>
+        </div>
+        <div class="title">
+            <span>东台8424西瓜 1个装（单果3kg起）</span>
+            <img src="../hemashengxian/img详情页/ia_300000005.png">
+        </div>
+        <div class="settle">皮薄肉厚 汁水充盈</div>
+
+        <div class="price">
+            <div class="preferential">￥29.9</div>
+            <div class="unit">/箱</div>
+            <div class="value">￥45</div>
+        </div>
+        <div class="fare">
+            <img src="../hemashengxian/img详情页/ia_300000006.png">
+            <span>商家24H发货，第三方物流配送，免运费</span>
+        </div>
+        <div class="time">
+            <img src="../hemashengxian/img详情页/ia_300000007.png">
+            <div class="goods">不支持7天无理由退换货</div>
+        </div>
+        <div class="selected">
+            <span>已选：1个/箱</span>
+            <img src="../hemashengxian/img详情页/ia_300000009.png">
+        </div>
+        <div class="evaluate">
+
+            <div class="left">评价（827）</div>
+            <div class="examine">查看全部评价
+                <img src="../hemashengxian/img详情页/ia_300000009.png">
+            </div>
+
+            <div class="client">
+                <img src="../hemashengxian/img详情页/ia_300000010.jpg">
+            </div>
+
+            <div class="appraise">
+                <div class="client-assess">评价（827）</div>
+                <div class="assess-text">很大很新鲜，包装超级安全，好评</div>
+                <div class="assess-time">2020.05.22</div>
+            </div>
+        </div>
+        <div class="recommend">
+            <div class="text">推荐菜谱</div>
+
+            <div class="menu">
+                <div class="item">
+                    <img src="../hemashengxian/img详情页/ia_300000011.jpg">
+
+                    <div class="bottom-title">酸奶水果沙拉</div>
+                    <div class="content">香蕉、苹果、西瓜、火龙果、金骏眉</div>
+                    <div class="other">531人做过</div>
+                    <div class="Click-buy">
+                        <span>共4种食材</span>
+                        <div class="buy">
+                            <span>购买食材</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../hemashengxian/img详情页/ia_300000012.jpg">
+                    <div class=" bottom-title">香橙煎鳕鱼</div>
+                    <div class="content">盐、银鳕鱼、橙子</div>
+                    <div class="other">10分钟左右</div>
+                    <div class="Click-buy">
+                        <span>共3种食材</span>
+                        <div class="buy">
+                            <span>购买食材</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add">
+            <span>加入购物车</span>
         </div>
     </div>
 </body>
